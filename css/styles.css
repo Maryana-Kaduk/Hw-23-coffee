@@ -1,0 +1,302 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h5 ul, p {
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration:  none;
+}
+body {
+    max-width: 100%;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    background: #FEFCF7;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.info {
+    padding: 85px 0 200px;
+    /* height: 525px; */
+}
+.info-wrapper {
+    max-width: 1111px;
+    margin: 0 auto;
+    padding-top: 126px;
+    background-image: url(../images/text.png);
+    background-repeat: no-repeat;
+    height: 525px; 
+}
+.info__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.info__item {
+    max-width: 255px;
+    text-align: center;
+}
+.coffee-image {
+    margin-bottom: 72px;
+}
+.coffee__name {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;   
+    color: #333D4B;
+    margin-bottom: 24px;
+}
+.info-text {
+    color: #333D4B;
+    margin-bottom: 0;
+}
+
+.choose {
+    padding-bottom: 151px;
+    position: relative;
+}
+.choose__wrapper {
+    height: 577px;
+    /* padding-bottom: 151px; */
+    background: #2C343E;
+    border-radius: 10px;
+    color: #FEFCF7;
+    text-align: center;
+    padding: 100px 370px 0;
+    
+}
+.choose-heading {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 32px;
+}
+.choose-text {
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+.blocks {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.choose-info {
+    min-width: 350px;
+    max-height: 382px;
+    background: #0E8784;
+    border-radius: 8px;
+    padding: 72px 48px 48px;
+}
+.choose-info:nth-child(3) {
+    padding-top: 83px;
+}
+.choose-image {
+    margin-bottom: 56px;
+}
+.choose-image[alt="car icon"] {
+    margin-bottom: 67px;
+}
+.choose__info-heading {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 689px;
+    }
+    .info {
+        padding: 85px 0 144px;
+    }
+    .info-wrapper {
+        background-image: url(../images/text-tablet.png);
+        height: 927px; 
+        max-width: 689px;
+        padding-top: 59px;
+    }
+    .info__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        max-width: 573px;
+        margin: 0 auto;
+    }
+    .info__item {
+        max-width: inherit;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 35px;
+    }
+    .info__item-content {
+        min-width: 282px;
+        max-height: 106px;
+    }
+    .coffee-image {
+        margin-bottom: 0;
+    }
+    .info-text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+
+    .choose {
+        padding-bottom: 290px;
+    }
+    .choose__wrapper {
+        height: 573px;
+        padding: 56px 74px;
+        text-align: center;
+    }
+    .choose-heading {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 24px;
+    }
+    .choose-text {
+        opacity: 0.800000011920929;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .blocks {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: left;
+    }
+    .choose-info {
+        min-width: 573px;
+        max-height: 180px;
+        padding: 41px 48px 41px 70px;
+        display: flex;
+        align-items: center;
+        gap: 55.5px;
+    }
+    .choose-info:nth-child(3) {
+        padding-top: 41px;
+    }
+    .choose-image {
+        margin-bottom: 0;
+        width: 56px;
+    }
+    .choose-image[alt="car icon"] {
+        margin-bottom: 0px;
+        width: 55px;
+        height: 39px;
+    }
+    .choose__info-heading {
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    .choose__info-wrapper{
+        max-width: 344px;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 100%;
+    }
+    .info {
+        padding: 0px 0 120px;
+    }
+    .info-wrapper {
+        background-image: url(../images/text-mob.png);
+        height: 1321px; 
+        max-width: 100%;
+        padding-top: 85px;
+    }
+    .info__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+        max-width: 282px;
+        max-height: 1236px;
+    }
+    .info__item {
+        height: 273px;
+        text-align: center;
+        display: block;
+    }
+    .info__item-content {
+        min-width: 282px;
+        max-height: 98px;
+    }
+    .coffee-image {
+        margin-bottom: 24px;
+        width: 200px;
+    }
+    .coffee__name {
+        margin-bottom: 16px;
+    }
+
+
+    .choose {
+        padding-bottom: 597px;
+    }
+    .choose__wrapper {
+        height: 902px;
+        max-width: 327px;
+        margin: 0 auto;
+        padding: 64px 24px;
+    }
+    .choose-heading {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    p.choose-text {
+        max-height: 125px;
+        /* text-align: center; */
+    }
+    .blocks {
+        text-align: center;
+    }
+    .choose-info {
+        min-width: 279px;
+        max-height: 382px;
+        padding: 72px 12px 51px;
+        display: block;
+    }
+    .choose-info:nth-child(3) {
+        padding-top: 72px;
+    }
+    .choose-image {
+        margin-bottom: 56px;
+        width: 71px;
+    }
+    .choose-image[alt="car icon"] {
+        margin-bottom: 67px;
+        width: 72px;
+        height: 50px;
+    }
+    .choose__info-wrapper{
+        max-width: 255px;
+    }
+    .choose__info-text {
+        max-width: 212px;
+        margin: 0 auto;
+    }
+    br {
+        display: none;
+    }
+}
